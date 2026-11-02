@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buscar informes - JustiData</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+  <div class="marca">
+    <strong>JustiData Solutions S.A.</strong>
+    <span>Sistema de Gestión y Seguimiento de Pericias</span>
+  </div>
+  <div class="sesion">Usuario: operador1 (Operador administrativo) | <a href="#">Cerrar sesión</a></div>
+</header>
+
+<nav>
+  <a href="cargar_informe.html">Cargar informe</a>
+  <a href="buscar_informes.html" class="activo">Buscar informes</a>
+</nav>
+
+<main>
+  <div class="caja">
+    <h1>Buscar informes</h1>
+
+    <form>
+      <div class="fila">
+        <div class="campo">
+          <label for="numero">Número de pericia</label>
+          <input type="text" id="numero" name="numero">
+        </div>
+        <div class="campo">
+          <label for="organismo">Nombre del organismo</label>
+          <input type="text" id="organismo" name="organismo">
+        </div>
+      </div>
+      <button type="submit">Buscar</button>
+    </form>
+  </div>
+
+  <div class="caja">
+    <h2>Resultados</h2>
+    <div class="tabla">
+      <table>
+        <tr>
+          <th>Organismo</th>
+          <th>N° de pericia</th>
+          <th>Tipo de pericia</th>
+          <th>Estado</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>Juzgado Civil N° 2</td>
+          <td>1045</td>
+          <td>Informática</td>
+          <td><span class="estado amarillo">En análisis</span></td>
+          <td><a href="informe.html">Ver informe</a></td>
+        </tr>
+        <tr>
+          <td>Juzgado Civil N° 2</td>
+          <td>1051</td>
+          <td>Contable</td>
+          <td><span class="estado azul">Solicitada</span></td>
+          <td><a href="informe.html">Ver informe</a></td>
+        </tr>
+        <tr>
+          <td>Fiscalía N° 1</td>
+          <td>0312</td>
+          <td>Médica</td>
+          <td><span class="estado verde">Finalizada</span></td>
+          <td><a href="informe.html">Ver informe</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</main>
+
+<footer>JustiData Solutions S.A. - Sistema de Gestión y Seguimiento de Pericias</footer>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cargar informe - JustiData</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+  <div class="marca">
+    <strong>JustiData Solutions S.A.</strong>
+    <span>Sistema de Gestión y Seguimiento de Pericias</span>
+  </div>
+  <div class="sesion">Usuario: operador1 (Operador administrativo) | <a href="#">Cerrar sesión</a></div>
+</header>
+
+<nav>
+  <a href="cargar_informe.html" class="activo">Cargar informe</a>
+  <a href="buscar_informes.html">Buscar informes</a>
+</nav>
+
+<main>
+  <div class="caja">
+    <h1>Cargar nuevo informe</h1>
+
+    <form action="informe.html" method="get">
+
+      <div class="fila">
+        <div class="campo">
+          <label for="organismo">Organismo solicitante</label>
+          <input type="text" id="organismo" name="organismo">
+        </div>
+        <div class="campo">
+          <label for="numero">Número de pericia</label>
+          <input type="text" id="numero" name="numero">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="expediente">Expediente</label>
+          <input type="text" id="expediente" name="expediente">
+        </div>
+        <div class="campo">
+          <label for="tipo">Tipo de pericia</label>
+          <select id="tipo" name="tipo">
+            <option>Médica</option>
+            <option>Psicológica</option>
+            <option>Informática</option>
+            <option>Contable</option>
+            <option>Accidentológica</option>
+            <option>Documentológica</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="perito">Perito responsable (DNI)</label>
+          <input type="text" id="perito" name="perito">
+        </div>
+        <div class="campo">
+          <label for="estado">Estado de la pericia</label>
+          <select id="estado" name="estado">
+            <option>Solicitada</option>
+            <option>En análisis</option>
+            <option>En proceso de evaluación</option>
+            <option>En elaboración de informe</option>
+            <option>Finalizada</option>
+            <option>Suspendida</option>
+            <option>Cancelada</option>
+            <option>Impugnada</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="tipo_informe">Tipo de informe</label>
+          <select id="tipo_informe" name="tipo_informe">
+            <option>Informe Pericial</option>
+            <option>Ampliación de Pericia</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" name="fecha">
+        </div>
+      </div>
+
+      <div class="campo">
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" name="descripcion" rows="5"></textarea>
+      </div>
+
+      <button type="submit">Guardar informe</button>
+      <button type="reset" class="gris">Borrar todo</button>
+
+    </form>
+  </div>
+</main>
+
+<footer>JustiData Solutions S.A. - Sistema de Gestión y Seguimiento de Pericias</footer>
+
+</body>
+</html>
